@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.muchomorkomat.database.AppDatabase
-import com.example.muchomorkomat.database.MushroomEntity
-import com.vocale.vocale.adapters.Adapter
+import com.example.muchomorkomat.database.Adapter
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 

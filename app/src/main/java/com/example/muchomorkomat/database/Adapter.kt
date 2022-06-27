@@ -1,13 +1,11 @@
-package com.vocale.vocale.adapters
+package com.example.muchomorkomat.database
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.muchomorkomat.R
-import com.example.muchomorkomat.database.MushroomEntity
 
 
 class Adapter() : RecyclerView.Adapter<Adapter.MushroomHolder>() {
