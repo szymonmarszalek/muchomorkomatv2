@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.muchomorkomat.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.muchomorkomat.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/classifyFragment"
+        android:name="com.example.muchomorkomat.classifyFragment"
+        android:label="fragment_classify"
+        tools:layout="@layout/fragment_classify" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.muchomorkomat.informationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.muchomorkomat.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

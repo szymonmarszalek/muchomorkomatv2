@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/classifyFragment"
+        android:title="Sprawdź"
+        android:icon="@drawable/ic_baseline_image_search"
+        />
+    <item
+        android:id="@+id/mainFragment"
+        android:title="Główna"
+        android:icon="@drawable/ic_baseline_home" />
+    <item
+        android:id="@+id/informationFragment"
+        android:title="Informacje"
+        android:icon="@drawable/ic_baseline_info"/>
+    <item
+        android:id="@+id/historyFragment"
+        android:title="Historia"
+        android:icon="@drawable/ic_baseline_info"/>
+</menu>
