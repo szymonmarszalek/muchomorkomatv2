@@ -8,10 +8,13 @@ import android.net.Uri
 import android.os.Build
 import android.provider.MediaStore
 import androidx.lifecycle.*
+import com.example.muchomorkomat.database.AppDatabase
+import com.example.muchomorkomat.database.MushroomEntity
 
 import com.example.muchomorkomat.ml.Model1
 
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.label.Category
@@ -20,6 +23,15 @@ import java.lang.IllegalArgumentException
 class recognizingViewModel(application: Application) : AndroidViewModel(application){
 
 
+    fun getMushrooms(database: AppDatabase): LiveData<List<MushroomEntity>> {
+        var liveData = MutableLiveData<List<MushroomEntity>>()
+        viewModelScope.launch {
+            liveData.postValue(database.mushroomDao().getAll())
+
+        }
+
+        return liveData
+    }
 
     fun classifyMushroom(uri: Uri, context: Context): List<Category> {
         if(Build.VERSION.SDK_INT >= 29) {
